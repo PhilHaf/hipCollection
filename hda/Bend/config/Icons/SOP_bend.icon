@@ -1,0 +1,17 @@
+
+#	Path_0
+		color(outlinecolor);
+		bgnclosedline();
+			vertex(10.00, 60.00);
+			vertex(50.00, 60.00);
+			vertex(57.40, 56.20);
+			vertex(60.00, 47.50);
+			vertex(60.00, 10.00);
+			vertex(90.00, 10.00);
+			vertex(90.00, 50.00);
+			vertex(88.00, 64.40);
+			vertex(81.60, 78.00);
+			vertex(70.00, 87.00);
+			vertex(55.00, 90.00);
+			vertex(10.00, 90.00);
+		endclosedline();

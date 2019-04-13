@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+  
+  
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+
+
+
+
+
+
+
+
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <title>SOP_Bend</title>
+</head>
+
+
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000099" link="#000099" vlink="#990099">
+
+
+
+
+
+
+
+<table style="font-family: Helvetica,Arial,sans-serif; width: 100%; height: 83px;" border="0" cellpadding="20" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr align="center">
+
+
+
+
+
+
+
+      <td style="height: 80px; text-align: left; background-color: rgb(177, 193, 208);">
+
+
+
+
+      
+      
+      <h1>&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;Bend SOP<br>
+
+
+
+
+
+
+
+      </h1>
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Overview</h2>
+
+
+
+
+
+
+
+<span style="font-family: Helvetica,Arial,sans-serif;" class="normaltextblacker">This
+sop bends objects. The bend is more uniform than the twist sop. For
+instance if you bend a tube by 360 degrees it will form a torus. It
+also allows limits to be placed on the bend.</span><span style="font-family: Helvetica,Arial,sans-serif;"></span><br style="font-family: Helvetica,Arial,sans-serif;">
+
+
+
+
+
+
+
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Usage</h2>
+
+
+
+
+
+
+
+<span style="font-family: Helvetica,Arial,sans-serif;">Input 1 is the
+polygonal geometry to be bent.<br>
+
+
+
+
+
+
+
+</span>
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Parameters</h2>
+
+
+
+
+
+
+
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;"></span>
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;"></span>
+<table style="text-align: left; font-family: Helvetica,Arial,sans-serif; background-color: rgb(160, 175, 189); width: 100%;" border="1" cellpadding="2" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(220, 220, 230); width: 264px;"><span style="font-weight: bold;">Upper Limit</span></td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Upper limit on bend [0-1] specified relative to the bounding box.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="width: 264px; background-color: rgb(220, 220, 230);"><span style="font-weight: bold;">Pivot Bias</span></td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Pivot point [0-1]&nbsp;specified relative to the bounding box.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(220, 220, 230); width: 264px;"><span style="font-weight: bold;">Lower Limit</span></td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Lower limit on bend [0-1] specified relative to the bounding box.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(220, 220, 230); width: 264px;"><span style="font-weight: bold;">Scale Bend</span></td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Scales the radius of the bend.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="font-weight: bold; background-color: rgb(220, 220, 230); width: 264px;">Bend Angle</td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Amount
+of bend in degrees. [0-360] You can't use negative values, instead
+rotate the bend by 180 degrees to achieve the same thing.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="font-weight: bold; background-color: rgb(220, 220, 230); width: 264px;">Bend Axis</td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">The axis around which to bend.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(220, 220, 230); width: 264px;"><span style="font-weight: bold;">Rotate Bend</span></td>
+
+
+
+
+
+
+
+      <td style="background-color: rgb(255, 255, 255); width: 683px;">Rotate the bend around.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+</body>
+</html>
