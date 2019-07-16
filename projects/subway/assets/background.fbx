@@ -11,9 +11,9 @@ FBXHeaderExtension:  {
 		Year: 2019
 		Month: 7
 		Day: 16
-		Hour: 9
-		Minute: 8
-		Second: 22
+		Hour: 8
+		Minute: 52
+		Second: 53
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins version 2016.1"
@@ -30,8 +30,8 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "/Projects/hipCollection/projects/subway/assets/ground.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "/Projects/hipCollection/projects/subway/assets/ground.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "/Projects/hipCollection/projects/subway/assets/background.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "/Projects/hipCollection/projects/subway/assets/background.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", ""
 			P: "Original|ApplicationName", "KString", "", "", ""
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 105553195896320, "", "Scene" {
+	Document: 105553126799872, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -97,7 +97,7 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 4
+	Count: 3
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -192,42 +192,18 @@ Definitions:  {
 			}
 		}
 	}
-	ObjectType: "Material" {
-		Count: 1
-		PropertyTemplate: "FbxSurfaceLambert" {
-			Properties70:  {
-				P: "ShadingModel", "KString", "", "", "Lambert"
-				P: "MultiLayer", "bool", "", "",0
-				P: "EmissiveColor", "Color", "", "A",0,0,0
-				P: "EmissiveFactor", "Number", "", "A",1
-				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
-				P: "AmbientFactor", "Number", "", "A",1
-				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
-				P: "DiffuseFactor", "Number", "", "A",1
-				P: "Bump", "Vector3D", "Vector", "",0,0,0
-				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
-				P: "BumpFactor", "double", "Number", "",1
-				P: "TransparentColor", "Color", "", "A",0,0,0
-				P: "TransparencyFactor", "Number", "", "A",0
-				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "DisplacementFactor", "double", "Number", "",1
-				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "VectorDisplacementFactor", "double", "Number", "",1
-			}
-		}
-	}
 }
 
 ; Object properties
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 140610418975648, "Geometry::material1", "Mesh" {
-		Vertices: *63 {
-			a: 0,0,-4,5,0,-4,10,0,-4,0,0,-2.66666650772095,5,0,-2.66666650772095,10,0,-2.66666650772095,0,0,-1.33333325386047,5,0,-1.33333325386047,10,0,-1.33333325386047,0,0,0,5,0,0,10,0,0,0,0,1.33333349227905,5,0,1.33333349227905,10,0,1.33333349227905,0,0,2.66666698455811,5,0,2.66666698455811,10,0,2.66666698455811,0,0,4,5,0,4,10,0,4
+	Geometry: 140610415766368, "Geometry::sop_autouv1", "Mesh" {
+		Vertices: *81 {
+			a: 0,0,-4,0,4,-4,0,4.52210474014282,-3.96577954292297,0,5.03527641296387,-3.86370325088501,0,5.53073406219482,-3.69551801681519,0,6,-3.46410155296326,0,6.43504571914673,-3.17341327667236,0,6.8284273147583,-2.82842707633972,0,7.17341327667236,-2.43504548072815,0,7.46410179138184,-1.99999988079071,0,7.69551801681519,-1.53073370456696,0,7.86370325088501,-1.03527629375458,0,7.96577930450439,-0.522104501724243,0,8,1.74845553146952e-07,0,7.96577930450439,0.522104859352112,0,7.86370325088501,1.03527665138245,0,7.69551801681519,1.53073406219482,0,7.46410179138184,2.00000023841858,0,7.17341327667236,2.43504571914673,0,6.8284273147583,2.82842707633972,0,6.43504571914673,3.17341327667236,0,6,3.46410155296326,0,5.53073310852051,3.69551849365234,0,5.03527545928955,3.86370348930359,0,4.52210426330566,3.96577954292297,0,4,4,0,0,4
 		} 
-		PolygonVertexIndex: *48 {
-			a: 3,4,1,-1,4,5,2,-2,6,7,4,-4,7,8,5,-5,9,10,7,-7,10,11,8,-8,12,13,10,-10,13,14,11,-11,15,16,13,-13,16,17,14,-14,18,19,16,-16,19,20,17,-17
+		PolygonVertexIndex: *27 {
+			a: 26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,-1
 		} 
 		GeometryVersion: 124
 		LayerElementUV: 0 {
@@ -235,11 +211,11 @@ Objects:  {
 			Name: "uv"
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "IndexToDirect"
-			UV: *42 {
-				a: 0.997476816177368,0.132996916770935,0.498738437891006,0.132998123764992,0.498738259077072,1.19579499369138e-06,0.997476518154144,0,0,0.132997944951057,0,1.01642581284977e-06,0.997476994991302,0.26599383354187,0.498738527297974,0.265994727611542,1.32855049628233e-07,0.265994787216187,0.997477114200592,0.398990631103516,0.498738706111908,0.398991167545319,2.65710099256466e-07,0.398991674184799,0.997477233409882,0.531987488269806,0.498738825321198,0.531987547874451,3.98565163095554e-07,0.531988501548767,0.997477352619171,0.664984405040741,0.498738914728165,0.664984166622162,5.97847758854186e-07,0.664985418319702,0.997477412223816,0.797981262207031,0.498739063739777,0.797981142997742,7.97130326191109e-07,0.797982335090637
+			UV: *54 {
+				a: 0.996545433998108,0.000974658876657486,0.996545553207397,0.498760163784027,0.992287039756775,0.56373405456543,0.979583978652954,0.627596437931061,0.95865386724472,0.689254283905029,0.929854810237885,0.74765282869339,0.893679916858673,0.801792681217194,0.850747644901276,0.850747525691986,0.801792681217194,0.893679738044739,0.747652888298035,0.929855048656464,0.689254343509674,0.958653926849365,0.627596437931061,0.979584038257599,0.563734173774719,0.99228709936142,0.498760133981705,0.996545612812042,0.43378609418869,0.99228698015213,0.369923651218414,0.979584097862244,0.308265775442123,0.95865398645401,0.24986732006073,0.929855108261108,0.195727527141571,0.893679857254028,0.146772652864456,0.850747764110565,0.103840425610542,0.801792621612549,0.06766527146101,0.747652888298035,0.0388662442564964,0.689254581928253,0.017936272546649,0.62759655714035,0.00523316347971559,0.563734173774719,0.000974658876657486,0.498760193586349,0.000974658876657486,0.000974658876657486
 			} 
-			UVIndex: *48 {
-				a: 0,1,2,3,1,4,5,2,6,7,1,0,7,8,4,1,9,10,7,6,10,11,8,7,12,13,10,9,13,14,11,10,15,16,13,12,16,17,14,13,18,19,16,15,19,20,17,16
+			UVIndex: *27 {
+				a: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
 			} 
 		}
 		LayerElementUserData: 0 {
@@ -251,8 +227,8 @@ Objects:  {
 			UserDataArray:  {
 				UserDataType: "Float"
 				UserDataName: "curvature"
-				UserData: *21 {
-					a: 0,0,0,0,-2.384186e-07,0,0,-2.384186e-07,0,0,-2.384186e-07,0,0,-2.384186e-07,0,0,-2.384186e-07,0,0,0,0
+				UserData: *27 {
+					a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				} 
 			}
 		}
@@ -265,33 +241,13 @@ Objects:  {
 			UserDataArray:  {
 				UserDataType: "Integer"
 				UserDataName: "__island_num__"
-				UserData: *12 {
-					a: 0,0,0,0,0,0,0,0,0,0,0,0
+				UserData: *1 {
+					a: 0
 				} 
 			}
-			UserDataArray:  {
-				UserDataType: "Integer"
-				UserDataName: "class"
-				UserData: *12 {
-					a: 0,0,0,0,0,0,0,0,0,0,0,0
-				} 
-			}
-		}
-		LayerElementMaterial: 0 {
-			Version: 101
-			Name: ""
-			MappingInformationType: "ByPolygon"
-			ReferenceInformationType: "IndexToDirect"
-			Materials: *12 {
-				a: 0,0,0,0,0,0,0,0,0,0,0,0
-			} 
 		}
 		Layer: 0 {
 			Version: 100
-			LayerElement:  {
-				Type: "LayerElementMaterial"
-				TypedIndex: 0
-			}
 			LayerElement:  {
 				Type: "LayerElementUserData"
 				TypedIndex: 0
@@ -309,7 +265,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 140612262055936, "Model::material1", "Mesh" {
+	Model: 140612284236800, "Model::sop_autouv1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -321,19 +277,6 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Material: 140610418977760, "Material::/obj/shopnet1/octane_diffuse1", "" {
-		Version: 102
-		ShadingModel: "lambert"
-		MultiLayer: 0
-		Properties70:  {
-			P: "AmbientColor", "Color", "", "A",0,0,0
-			P: "DiffuseColor", "Color", "", "A",0.756862759590149,0.756862759590149,0.756862759590149
-			P: "Emissive", "Vector3D", "Vector", "",0,0,0
-			P: "Ambient", "Vector3D", "Vector", "",0,0,0
-			P: "Diffuse", "Vector3D", "Vector", "",0.756862759590149,0.756862759590149,0.756862759590149
-			P: "Opacity", "double", "Number", "",1
-		}
-	}
 }
 
 ; Object connections
@@ -341,14 +284,11 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::material1, Model::RootNode
-	C: "OO",140612262055936,0
+	;Model::sop_autouv1, Model::RootNode
+	C: "OO",140612284236800,0
 	
-	;Geometry::material1, Model::material1
-	C: "OO",140610418975648,140612262055936
-	
-	;Material::/obj/shopnet1/octane_diffuse1, Model::material1
-	C: "OO",140610418977760,140612262055936
+	;Geometry::sop_autouv1, Model::sop_autouv1
+	C: "OO",140610415766368,140612284236800
 }
 ;Takes section
 ;----------------------------------------------------
